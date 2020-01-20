@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "migrate": "node node_modules/db-migrate/bin/db-migrate",
+    "say-hello": "echo 'Hello World!'"
   },
   "keywords": [
     "NodeJS"
@@ -13,6 +15,7 @@
   "author": "Yusuf",
   "license": "MIT",
   "dependencies": {
+    "db-migrate": "^0.11.6",
     "express": "^4.17.1"
   }
 }
